@@ -1,0 +1,19 @@
+{
+    "name": "october/oc-btcwallet-plugin",
+    "type": "october-plugin",
+    "description": "Btc wallet plugin",
+    "keywords": ["october", "cms", "btc", "wallet", "plugin"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Shohabbos Olimjonov",
+            "email": "19941001@inbox.ru",
+            "role": "Core maintainer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0",
+        "composer/installers": "~1.0",
+        "denpa/laravel-bitcoinrpc": "^1.2"
+    }
+}

@@ -1,0 +1,6 @@
+plugin:
+    name: 'shohabbos.multiwallet::lang.plugin.name'
+    description: 'shohabbos.multiwallet::lang.plugin.description'
+    author: Shohabbos
+    icon: oc-icon-btc
+    homepage: 'https://itmaker.uz'
