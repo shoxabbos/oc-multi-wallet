@@ -1,0 +1,22 @@
+<?php namespace Shohabbos\Multiwallet\Controllers;
+
+use Backend\Classes\Controller;
+use BackendMenu;
+
+class Balance extends Controller
+{
+    public $implement = [        'Backend\Behaviors\ListController',        'Backend\Behaviors\FormController'    ];
+    
+    public $listConfig = 'config_list.yaml';
+    public $formConfig = 'config_form.yaml';
+
+    public $requiredPermissions = [
+        'manage_multiwallet_balances' 
+    ];
+
+    public function __construct()
+    {
+        parent::__construct();
+        BackendMenu::setContext('Shohabbos.Multiwallet', 'multiwallet', 'multiwallet-balances');
+    }
+}

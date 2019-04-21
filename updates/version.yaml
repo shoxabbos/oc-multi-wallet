@@ -1,2 +1,32 @@
 1.0.1:
     - 'Initialize plugin.'
+1.0.2:
+    - 'Created table shohabbos_multiwallet_wallets'
+    - builder_table_create_shohabbos_multiwallet_wallets.php
+1.0.3:
+    - 'Updated table shohabbos_multiwallet_wallets'
+    - builder_table_update_shohabbos_multiwallet_wallets.php
+1.0.4:
+    - 'Updated table shohabbos_multiwallet_wallets'
+    - builder_table_update_shohabbos_multiwallet_wallets_2.php
+1.0.5:
+    - 'Updated table shohabbos_multiwallet_wallets'
+    - builder_table_update_shohabbos_multiwallet_currencies.php
+1.0.6:
+    - 'Updated table shohabbos_multiwallet_currencies'
+    - builder_table_update_shohabbos_multiwallet_currencies_2.php
+1.0.7:
+    - 'Updated table shohabbos_multiwallet_currencies'
+    - builder_table_update_shohabbos_multiwallet_currencies_3.php
+1.0.8:
+    - 'Updated table shohabbos_multiwallet_currencies'
+    - builder_table_update_shohabbos_multiwallet_currencies_4.php
+1.0.9:
+    - 'Updated table shohabbos_multiwallet_currencies'
+    - builder_table_update_shohabbos_multiwallet_currencies5.php
+1.0.10:
+    - 'Created table shohabbos_multiwallet_balances'
+    - builder_table_create_shohabbos_multiwallet_balances.php
+1.0.11:
+    - 'Updated table shohabbos_multiwallet_balances'
+    - builder_table_update_shohabbos_multiwallet_balances.php

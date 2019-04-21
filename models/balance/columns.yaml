@@ -1,0 +1,24 @@
+columns:
+    id:
+        label: id
+        type: number
+    currency_id:
+        label: currency_id
+        type: number
+    user_id:
+        label: user_id
+        type: number
+    balance:
+        label: balance
+        type: text
+    additional_balance:
+        label: additional_balance
+        type: text
+    created_at:
+        label: created_at
+        type: datetime
+        invisible: true
+    updated_at:
+        label: updated_at
+        type: datetime
+        invisible: true

@@ -1,0 +1,10 @@
+name: Balance
+form: $/shohabbos/multiwallet/models/balance/fields.yaml
+modelClass: Shohabbos\Multiwallet\Models\Balance
+defaultRedirect: shohabbos/multiwallet/balance
+create:
+    redirect: 'shohabbos/multiwallet/balance/update/:id'
+    redirectClose: shohabbos/multiwallet/balance
+update:
+    redirect: shohabbos/multiwallet/balance
+    redirectClose: shohabbos/multiwallet/balance

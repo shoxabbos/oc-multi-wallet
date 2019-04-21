@@ -1,0 +1,10 @@
+name: Currencies
+form: $/shohabbos/multiwallet/models/currency/fields.yaml
+modelClass: Shohabbos\Multiwallet\Models\Currency
+defaultRedirect: shohabbos/multiwallet/currencies
+create:
+    redirect: 'shohabbos/multiwallet/currencies/update/:id'
+    redirectClose: shohabbos/multiwallet/currencies
+update:
+    redirect: shohabbos/multiwallet/currencies
+    redirectClose: shohabbos/multiwallet/currencies
