@@ -1,6 +1,7 @@
 <?php namespace Shohabbos\Multiwallet\Models;
 
 use Model;
+use RainLab\User\Models\User;
 
 /**
  * Model
@@ -22,7 +23,7 @@ class Balance extends Model
     ];
 
     public $belongsTo = [
-        'currency' => Currency::class
+        'user' => User::class
     ];
 
     public $guarded = ['id'];

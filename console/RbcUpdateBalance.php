@@ -36,9 +36,9 @@ class RbcUpdateBalance extends Command
 
             if (is_numeric($userId)) {
                 
-                // Balance::where('user_id', $userId)
-
-                // $users[$matches[1]] = $value;
+                Balance::where('user_id', $userId)
+                    ->where('currency', 'rbc')
+                    ->update(['balance' => $value]);
             }
         }
 

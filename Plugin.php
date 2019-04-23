@@ -7,7 +7,6 @@ use \System\Classes\PluginBase;
 use \Illuminate\Foundation\AliasLoader;
 
 use \Rainlab\User\Models\User;
-use \Shohabbos\Multiwallet\Models\Currency;
 use \Shohabbos\Multiwallet\Models\Balance;
 
 use \Denpa\Bitcoin\Facades\Bitcoind;
@@ -43,25 +42,17 @@ class Plugin extends PluginBase
 
 
         User::extend(function($model) {
-            $model->addDynamicMethod('getBalance', function($currency = null) use ($model) {
-                if ($currency) {
-                    $currency = Currency::where('key', $currency)->first();
-                } else {
-                    $currency = Currency::where('is_default', 1)->first();
-                }
+            $model->hasMany['balances'] = Balance::class;
 
-                if (!$currency) {
-                    return;
-                }
-
-                $balance = $currency->balances()->where('user_id', $model->id)->first();
+            $model->addDynamicMethod('getBalance', function($currency = 'rbc') use ($model) {
+                $balance = $model->balances()->where('currency', $currency)->first();
 
                 if (!$balance) {
                     $balance = new Balance([
-                        'user_id' => $model->id,
+                        'currency' => $currency,
                         'wallet' => $currency->getAddress($model->id)
                     ]);
-                    $currency->balances()->add($balance);
+                    $model->balances()->add($balance);
                 }
 
                 return $balance;
