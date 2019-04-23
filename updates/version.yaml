@@ -30,3 +30,15 @@
 1.0.11:
     - 'Updated table shohabbos_multiwallet_balances'
     - builder_table_update_shohabbos_multiwallet_balances.php
+1.0.12:
+    - 'Updated table shohabbos_multiwallet_balances'
+    - builder_table_update_shohabbos_multiwallet_balances_2.php
+1.0.13:
+    - 'Updated table shohabbos_multiwallet_balances'
+    - builder_table_update_shohabbos_multiwallet_balances_3.php
+1.0.14:
+    - 'Updated table shohabbos_multiwallet_balances'
+    - builder_table_update_shohabbos_multiwallet_balances_4.php
+1.0.15:
+    - 'Drop table shohabbos_multiwallet_currencies'
+    - builder_table_delete_shohabbos_multiwallet_currencies.php

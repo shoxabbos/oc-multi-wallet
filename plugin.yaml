@@ -4,3 +4,21 @@ plugin:
     author: Shohabbos
     icon: oc-icon-btc
     homepage: 'https://itmaker.uz'
+permissions:
+    manage_multiwallet_balances:
+        tab: 'shohabbos.multiwallet::lang.plugin.name'
+        label: 'Manage balances'
+navigation:
+    multiwallet:
+        label: Rubcoin
+        url: shohabbos/multiwallet/currencies
+        icon: icon-bitcoin
+        permissions:
+            - manage_multiwallet_currencies
+        sideMenu:
+            multiwallet-balances:
+                label: Balances
+                url: shohabbos/multiwallet/balance
+                icon: icon-list-ul
+                permissions:
+                    - manage_multiwallet_balances

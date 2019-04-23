@@ -27,6 +27,10 @@ class Plugin extends PluginBase
     {
     }
 
+    public function register()
+    {
+        $this->registerConsoleCommand('shohabbos.rbcupdatebalance', 'Shohabbos\Multiwallet\Console\RbcUpdateBalance');
+    }
 
     public function boot() {
 
