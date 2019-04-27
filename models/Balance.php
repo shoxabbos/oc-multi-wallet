@@ -28,4 +28,11 @@ class Balance extends Model
 
     public $guarded = ['id'];
     
+
+    public function generateAddress($account) {
+        if ($this->currency == 'rbc') {
+            return bitcoind()->getnewaddress('rubcoin-web-'.$account)->get();
+        }
+    }
+
 }

@@ -48,10 +48,9 @@ class Plugin extends PluginBase
                 $balance = $model->balances()->where('currency', $currency)->first();
 
                 if (!$balance) {
-                    $balance = new Balance([
-                        'currency' => $currency,
-                        'wallet' => $currency->getAddress($model->id)
-                    ]);
+                    $balance = new Balance();
+                    $balance->currency = $currency;
+                    $balance->wallet = $balance->generateAddress($model->id);
                     $model->balances()->add($balance);
                 }
 
